@@ -38,3 +38,8 @@ mark.owner::before { content: "OWNER: "; color: #c9a400; }
   background: rgba(10,10,10,.08); color: inherit; vertical-align: middle; }
 .el-lang.in-nav { position: relative; top: auto; right: auto; margin-right: 10px; align-self: center; }
 .form-sent { grid-column: 1 / -1; padding: 14px 18px; border-radius: 12px; background: #e4fe7b; color: #0a0a0a; font-weight: 600; }
+
+/* team cards: real profiles have several paragraphs; initials until photos arrive */
+.person p { flex: none; margin-bottom: 12px; }
+.person .photo { border: 0; background: var(--ink); color: var(--lime); display: grid; place-items: center; font-weight: 600; font-size: 28px; letter-spacing: .02em; }
+@media (min-width: 901px) { #team .cards { grid-template-columns: repeat(2, 1fr); } }
