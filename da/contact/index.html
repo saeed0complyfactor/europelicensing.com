@@ -24,7 +24,7 @@
 <details class="el-lang"><summary aria-label="Sprog">DA</summary><ul><li><a href="/da/contact/" hreflang="en" lang="en">English</a></li><li><a href="/bg/contact/" hreflang="bg" lang="bg">Български</a></li><li><a href="/cs/contact/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/da/contact/" hreflang="da" lang="da" aria-current="true">Dansk</a></li><li><a href="/de/contact/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/el/contact/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/es/contact/" hreflang="es" lang="es">Español</a></li><li><a href="/et/contact/" hreflang="et" lang="et">Eesti</a></li><li><a href="/fi/contact/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/fr/contact/" hreflang="fr" lang="fr">Français</a></li><li><a href="/hr/contact/" hreflang="hr" lang="hr">Hrvatski</a></li><li><a href="/hu/contact/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/is/contact/" hreflang="is" lang="is">Íslenska</a></li><li><a href="/it/contact/" hreflang="it" lang="it">Italiano</a></li><li><a href="/lt/contact/" hreflang="lt" lang="lt">Lietuvių</a></li><li><a href="/lv/contact/" hreflang="lv" lang="lv">Latviešu</a></li><li><a href="/nl/contact/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/no/contact/" hreflang="no" lang="no">Norsk</a></li><li><a href="/pl/contact/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/pt/contact/" hreflang="pt" lang="pt">Português</a></li><li><a href="/ro/contact/" hreflang="ro" lang="ro">Română</a></li><li><a href="/sk/contact/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/sl/contact/" hreflang="sl" lang="sl">Slovenščina</a></li><li><a href="/sv/contact/" hreflang="sv" lang="sv">Svenska</a></li></ul></details>
 <main class="inner-main">
 <section class="page-hero dark"><div class="wrap"><div class="crumbs"><a href="/da/">Forside</a></div><h1>Book en afklaringssamtale</h1><div class="lead"><p>Fortæl os, hvad du vil udbyde, og hvor dine kunder er. Vi svarer inden for <mark class="owner">response time for enquiries</mark> for at aftale et opkald, eller du kan selv vælge et tidspunkt.</p></div><a class="btn" href="https://calendar.app.google/f8PezUkB9GnLY4Wk8">Book en afklaringssamtale</a></div></section>
-<div class="wrap doc simple"><article class="prose"><section id="form"><h2>Send os dine oplysninger</h2><form class="form" method="post" action="#">
+<div class="wrap doc simple"><article class="prose"><section id="form"><h2>Send os dine oplysninger</h2><form class="form" method="post" action="https://formsubmit.co/info@europelicensing.com">
 <label>Navn<input name="name" autocomplete="name" required></label>
 <label>Arbejds-e-mail<input name="email" type="email" autocomplete="email" required></label>
 <label>Virksomhed<input name="company" autocomplete="organization"></label>
@@ -32,8 +32,11 @@
 <label class="full">Lande, du overvejer<input name="countries" placeholder="For eksempel Litauen, Irland, Storbritannien"></label>
 <label class="full">Om dit produkt<textarea name="message" rows="6" placeholder="Hvad du udbyder, hvordan penge eller kryptoaktiver bevæger sig, og hvor dine kunder er" required></textarea></label>
 <label class="full check"><input type="checkbox" name="consent" required> Jeg accepterer, at Europe Licensing må bruge disse oplysninger til at besvare min henvendelse (se <a href="/da/privacy/">privatlivspolitikken</a>).</label>
-<input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-<button class="btn" type="submit" disabled>Send</button><p class="form-note"><mark class="owner">form endpoint (e.g. Web3Forms key) and privacy policy page</mark></p>
+<input type="hidden" name="_subject" value="New enquiry from europelicensing.com">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://europelicensing.com/da/contact/#sent">
+<p class="form-sent" role="status" hidden>Tak. Vi har modtaget din besked og svarer på e-mail.</p>
+<button class="btn" type="submit">Send</button>
 </form></section><section id="what-happens-next"><h2>Hvad sker der derefter</h2>
 <ol>
 <li>Vi læser din besked og tjekker, hvilken tilladelse dit produkt peger på.</li>

@@ -24,7 +24,7 @@
 <details class="el-lang"><summary aria-label="Język">PL</summary><ul><li><a href="/pl/contact/" hreflang="en" lang="en">English</a></li><li><a href="/bg/contact/" hreflang="bg" lang="bg">Български</a></li><li><a href="/cs/contact/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/da/contact/" hreflang="da" lang="da">Dansk</a></li><li><a href="/de/contact/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/el/contact/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/es/contact/" hreflang="es" lang="es">Español</a></li><li><a href="/et/contact/" hreflang="et" lang="et">Eesti</a></li><li><a href="/fi/contact/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/fr/contact/" hreflang="fr" lang="fr">Français</a></li><li><a href="/hr/contact/" hreflang="hr" lang="hr">Hrvatski</a></li><li><a href="/hu/contact/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/is/contact/" hreflang="is" lang="is">Íslenska</a></li><li><a href="/it/contact/" hreflang="it" lang="it">Italiano</a></li><li><a href="/lt/contact/" hreflang="lt" lang="lt">Lietuvių</a></li><li><a href="/lv/contact/" hreflang="lv" lang="lv">Latviešu</a></li><li><a href="/nl/contact/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/no/contact/" hreflang="no" lang="no">Norsk</a></li><li><a href="/pl/contact/" hreflang="pl" lang="pl" aria-current="true">Polski</a></li><li><a href="/pt/contact/" hreflang="pt" lang="pt">Português</a></li><li><a href="/ro/contact/" hreflang="ro" lang="ro">Română</a></li><li><a href="/sk/contact/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/sl/contact/" hreflang="sl" lang="sl">Slovenščina</a></li><li><a href="/sv/contact/" hreflang="sv" lang="sv">Svenska</a></li></ul></details>
 <main class="inner-main">
 <section class="page-hero dark"><div class="wrap"><div class="crumbs"><a href="/pl/">Strona główna</a></div><h1>Umów rozmowę wstępną</h1><div class="lead"><p>Prosimy o informację, co chcą Państwo oferować i gdzie są Państwa klienci. Odpowiemy w ciągu <mark class="owner">response time for enquiries</mark>, aby umówić rozmowę, albo mogą Państwo sami wybrać termin.</p></div><a class="btn" href="https://calendar.app.google/f8PezUkB9GnLY4Wk8">Umów rozmowę wstępną</a></div></section>
-<div class="wrap doc simple"><article class="prose"><section id="form"><h2>Prześlij nam swoje dane</h2><form class="form" method="post" action="#">
+<div class="wrap doc simple"><article class="prose"><section id="form"><h2>Prześlij nam swoje dane</h2><form class="form" method="post" action="https://formsubmit.co/info@europelicensing.com">
 <label>Imię i nazwisko<input name="name" autocomplete="name" required></label>
 <label>Służbowy adres e-mail<input name="email" type="email" autocomplete="email" required></label>
 <label>Firma<input name="company" autocomplete="organization"></label>
@@ -32,8 +32,11 @@
 <label class="full">Kraje, które Państwo rozważają<input name="countries" placeholder="Na przykład Litwa, Irlandia, Wielka Brytania"></label>
 <label class="full">O Państwa produkcie<textarea name="message" rows="6" placeholder="Co oferują Państwo, jak przepływają pieniądze lub kryptoaktywa, gdzie są Państwa klienci" required></textarea></label>
 <label class="full check"><input type="checkbox" name="consent" required> Zgadzam się, aby Europe Licensing wykorzystała te dane do odpowiedzi na moje zapytanie (zob. <a href="/pl/privacy/">politykę prywatności</a>).</label>
-<input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-<button class="btn" type="submit" disabled>Wyślij</button><p class="form-note"><mark class="owner">form endpoint (e.g. Web3Forms key) and privacy policy page</mark></p>
+<input type="hidden" name="_subject" value="New enquiry from europelicensing.com">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://europelicensing.com/pl/contact/#sent">
+<p class="form-sent" role="status" hidden>Dziękujemy. Otrzymaliśmy Państwa wiadomość i odpowiemy e-mailem.</p>
+<button class="btn" type="submit">Wyślij</button>
 </form></section><section id="what-happens-next"><h2>Co dalej</h2>
 <ol>
 <li>Czytamy Państwa wiadomość i sprawdzamy, na jaką licencję wskazuje Państwa produkt.</li>

@@ -24,7 +24,7 @@
 <details class="el-lang"><summary aria-label="Език">BG</summary><ul><li><a href="/bg/contact/" hreflang="en" lang="en">English</a></li><li><a href="/bg/contact/" hreflang="bg" lang="bg" aria-current="true">Български</a></li><li><a href="/cs/contact/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/da/contact/" hreflang="da" lang="da">Dansk</a></li><li><a href="/de/contact/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/el/contact/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/es/contact/" hreflang="es" lang="es">Español</a></li><li><a href="/et/contact/" hreflang="et" lang="et">Eesti</a></li><li><a href="/fi/contact/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/fr/contact/" hreflang="fr" lang="fr">Français</a></li><li><a href="/hr/contact/" hreflang="hr" lang="hr">Hrvatski</a></li><li><a href="/hu/contact/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/is/contact/" hreflang="is" lang="is">Íslenska</a></li><li><a href="/it/contact/" hreflang="it" lang="it">Italiano</a></li><li><a href="/lt/contact/" hreflang="lt" lang="lt">Lietuvių</a></li><li><a href="/lv/contact/" hreflang="lv" lang="lv">Latviešu</a></li><li><a href="/nl/contact/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/no/contact/" hreflang="no" lang="no">Norsk</a></li><li><a href="/pl/contact/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/pt/contact/" hreflang="pt" lang="pt">Português</a></li><li><a href="/ro/contact/" hreflang="ro" lang="ro">Română</a></li><li><a href="/sk/contact/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/sl/contact/" hreflang="sl" lang="sl">Slovenščina</a></li><li><a href="/sv/contact/" hreflang="sv" lang="sv">Svenska</a></li></ul></details>
 <main class="inner-main">
 <section class="page-hero dark"><div class="wrap"><div class="crumbs"><a href="/bg/">Начало</a></div><h1>Запазете час за първоначален разговор</h1><div class="lead"><p>Кажете ни какво искате да предлагате и къде са Вашите клиенти. Ще отговорим в рамките на <mark class="owner">response time for enquiries</mark>, за да уговорим разговор, или можете сами да изберете час.</p></div><a class="btn" href="https://calendar.app.google/f8PezUkB9GnLY4Wk8">Запазете час за първоначален разговор</a></div></section>
-<div class="wrap doc simple"><article class="prose"><section id="form"><h2>Изпратете ни данните си</h2><form class="form" method="post" action="#">
+<div class="wrap doc simple"><article class="prose"><section id="form"><h2>Изпратете ни данните си</h2><form class="form" method="post" action="https://formsubmit.co/info@europelicensing.com">
 <label>Име<input name="name" autocomplete="name" required></label>
 <label>Служебен имейл<input name="email" type="email" autocomplete="email" required></label>
 <label>Дружество<input name="company" autocomplete="organization"></label>
@@ -32,8 +32,11 @@
 <label class="full">Държави, които обмисляте<input name="countries" placeholder="Например Литва, Ирландия, Обединеното кралство"></label>
 <label class="full">За Вашия продукт<textarea name="message" rows="6" placeholder="Какво предлагате, как се движат парите или криптоактивите, къде са Вашите клиенти" required></textarea></label>
 <label class="full check"><input type="checkbox" name="consent" required> Съгласен съм Europe Licensing да използва тези данни, за да отговори на запитването ми (вижте <a href="/bg/privacy/">политиката за поверителност</a>).</label>
-<input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-<button class="btn" type="submit" disabled>Изпращане</button><p class="form-note"><mark class="owner">form endpoint (e.g. Web3Forms key) and privacy policy page</mark></p>
+<input type="hidden" name="_subject" value="New enquiry from europelicensing.com">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://europelicensing.com/bg/contact/#sent">
+<p class="form-sent" role="status" hidden>Благодарим Ви. Получихме съобщението Ви и ще отговорим по имейл.</p>
+<button class="btn" type="submit">Изпращане</button>
 </form></section><section id="what-happens-next"><h2>Какво следва</h2>
 <ol>
 <li>Четем съобщението Ви и проверяваме към кой лиценз сочи Вашият продукт.</li>

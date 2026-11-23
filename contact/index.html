@@ -24,7 +24,7 @@
 <details class="el-lang"><summary aria-label="Language">EN</summary><ul><li><a href="/contact/" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="/bg/contact/" hreflang="bg" lang="bg">Български</a></li><li><a href="/cs/contact/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/da/contact/" hreflang="da" lang="da">Dansk</a></li><li><a href="/de/contact/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/el/contact/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/es/contact/" hreflang="es" lang="es">Español</a></li><li><a href="/et/contact/" hreflang="et" lang="et">Eesti</a></li><li><a href="/fi/contact/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/fr/contact/" hreflang="fr" lang="fr">Français</a></li><li><a href="/hr/contact/" hreflang="hr" lang="hr">Hrvatski</a></li><li><a href="/hu/contact/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/is/contact/" hreflang="is" lang="is">Íslenska</a></li><li><a href="/it/contact/" hreflang="it" lang="it">Italiano</a></li><li><a href="/lt/contact/" hreflang="lt" lang="lt">Lietuvių</a></li><li><a href="/lv/contact/" hreflang="lv" lang="lv">Latviešu</a></li><li><a href="/nl/contact/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/no/contact/" hreflang="no" lang="no">Norsk</a></li><li><a href="/pl/contact/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/pt/contact/" hreflang="pt" lang="pt">Português</a></li><li><a href="/ro/contact/" hreflang="ro" lang="ro">Română</a></li><li><a href="/sk/contact/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/sl/contact/" hreflang="sl" lang="sl">Slovenščina</a></li><li><a href="/sv/contact/" hreflang="sv" lang="sv">Svenska</a></li></ul></details>
 <main class="inner-main">
 <section class="page-hero dark"><div class="wrap"><div class="crumbs"><a href="/">Home</a></div><h1>Book a scoping call</h1><div class="lead"><p>Tell us what you want to offer and where your customers are. We will reply within <mark class="owner">response time for enquiries</mark> to arrange a call, or you can pick a time yourself.</p></div><a class="btn" href="https://calendar.app.google/f8PezUkB9GnLY4Wk8">Book a scoping call</a></div></section>
-<div class="wrap doc simple"><article class="prose"><section id="form"><h2>Send us your details</h2><form class="form" method="post" action="#">
+<div class="wrap doc simple"><article class="prose"><section id="form"><h2>Send us your details</h2><form class="form" method="post" action="https://formsubmit.co/info@europelicensing.com">
 <label>Name<input name="name" autocomplete="name" required></label>
 <label>Work email<input name="email" type="email" autocomplete="email" required></label>
 <label>Company<input name="company" autocomplete="organization"></label>
@@ -32,8 +32,11 @@
 <label class="full">Countries you are considering<input name="countries" placeholder="For example Lithuania, Ireland, the UK"></label>
 <label class="full">About your product<textarea name="message" rows="6" placeholder="What you offer, how money or crypto-assets move, where your customers are" required></textarea></label>
 <label class="full check"><input type="checkbox" name="consent" required> I agree that Europe Licensing may use these details to reply to my enquiry (see the <a href="/privacy/">privacy policy</a>).</label>
-<input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-<button class="btn" type="submit" disabled>Send</button><p class="form-note"><mark class="owner">form endpoint (e.g. Web3Forms key) and privacy policy page</mark></p>
+<input type="hidden" name="_subject" value="New enquiry from europelicensing.com">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://europelicensing.com/contact/#sent">
+<p class="form-sent" role="status" hidden>Thank you. We have received your message and will reply by email.</p>
+<button class="btn" type="submit">Send</button>
 </form></section><section id="what-happens-next"><h2>What happens next</h2>
 <ol>
 <li>We read your message and check which licence your product points to.</li>

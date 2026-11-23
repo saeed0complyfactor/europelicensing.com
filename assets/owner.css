@@ -37,3 +37,4 @@ mark.owner::before { content: "OWNER: "; color: #c9a400; }
 .lang-tag { display: inline-block; margin-left: 6px; padding: 1px 6px; border-radius: 4px; font: 600 11px/1.4 "Red Hat Mono", monospace;
   background: rgba(10,10,10,.08); color: inherit; vertical-align: middle; }
 .el-lang.in-nav { position: relative; top: auto; right: auto; margin-right: 10px; align-self: center; }
+.form-sent { grid-column: 1 / -1; padding: 14px 18px; border-radius: 12px; background: #e4fe7b; color: #0a0a0a; font-weight: 600; }

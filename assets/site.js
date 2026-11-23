@@ -69,3 +69,9 @@ document.addEventListener('click', (e) => {
   if (sw && row) { row.prepend(sw); sw.classList.add('in-nav'); }
   document.addEventListener('click', (e) => { if (sw && sw.open && !sw.contains(e.target)) sw.open = false; });
 })();
+
+// Contact form: FormSubmit sends the visitor back to /contact/#sent after a successful submission.
+(() => {
+  const note = location.hash === '#sent' && document.querySelector('.form-sent');
+  if (note) { note.hidden = false; note.scrollIntoView({ block: 'center' }); }
+})();
