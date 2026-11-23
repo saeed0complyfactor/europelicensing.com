@@ -18,3 +18,7 @@ mark.owner::before { content: "OWNER: "; color: #c9a400; }
 
 /* Template floating chat button: its icon needs Framer JS, so it showed as an empty black square. */
 .framer-ky3nrx-container { display: none !important; }
+
+/* Scroll reveal (site.js adds .el-js only when it can run, so without JS everything stays visible) */
+[data-el-reveal] { transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+.el-js [data-el-reveal]:not(.el-in) { opacity: 0 !important; transform: translateY(24px) !important; }
