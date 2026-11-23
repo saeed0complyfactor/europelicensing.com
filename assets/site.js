@@ -61,3 +61,11 @@ document.addEventListener('click', (e) => {
   addEventListener('scroll', update, { passive: true });
   update();
 })();
+
+// Language switcher: build.py appends it after the header; move it into the visible nav row next to "Book a call".
+(() => {
+  const sw = document.querySelector('.el-lang');
+  const row = [...document.querySelectorAll('[data-framer-name="Button Wrapper"]')].find((e) => e.offsetParent && e.closest('[data-framer-name="Nav Container"]'));
+  if (sw && row) { row.prepend(sw); sw.classList.add('in-nav'); }
+  document.addEventListener('click', (e) => { if (sw && sw.open && !sw.contains(e.target)) sw.open = false; });
+})();

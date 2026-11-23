@@ -22,3 +22,18 @@ mark.owner::before { content: "OWNER: "; color: #c9a400; }
 /* Scroll reveal (site.js adds .el-js only when it can run, so without JS everything stays visible) */
 [data-el-reveal] { transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
 .el-js [data-el-reveal]:not(.el-in) { opacity: 0 !important; transform: translateY(24px) !important; }
+
+/* Language switcher (build.py switcher()): sits in the top bar, left of the template's header buttons */
+.el-lang { position: fixed; top: 16px; right: 64px; z-index: 20; font: 600 13px/1 "Red Hat Mono", ui-monospace, monospace; }
+.el-lang summary { list-style: none; cursor: pointer; padding: 10px 12px; border: 1px solid rgba(255,255,230,.35); border-radius: 999px;
+  color: #ffffe6; background: rgba(10,10,10,.55); backdrop-filter: blur(6px); letter-spacing: .06em; }
+.el-lang summary::-webkit-details-marker { display: none; }
+.el-lang summary::after { content: " \25BE"; }
+.el-lang ul { position: absolute; right: 0; top: calc(100% + 8px); margin: 0; padding: 8px; list-style: none; background: #0a0a0a;
+  border: 1px solid rgba(255,255,230,.2); border-radius: 12px; max-height: 70vh; overflow: auto; min-width: 170px;
+  font: 500 14px/1.2 Inter, system-ui, sans-serif; }
+.el-lang li a { display: block; padding: 8px 10px; border-radius: 8px; color: #ffffe6; text-decoration: none; }
+.el-lang li a:hover, .el-lang li a[aria-current] { background: #e4fe7b; color: #0a0a0a; }
+.lang-tag { display: inline-block; margin-left: 6px; padding: 1px 6px; border-radius: 4px; font: 600 11px/1.4 "Red Hat Mono", monospace;
+  background: rgba(10,10,10,.08); color: inherit; vertical-align: middle; }
+.el-lang.in-nav { position: relative; top: auto; right: auto; margin-right: 10px; align-self: center; }
