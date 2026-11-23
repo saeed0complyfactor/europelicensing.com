@@ -1,0 +1,20 @@
+/* Text logo in the template's logo slot (replaces the Agevia image). */
+[data-framer-name="Logo"], [data-framer-name="Logo Wrapper"], [data-framer-name="Brand Logo"] { overflow: visible !important; }
+.el-logo { display: flex; align-items: center; height: 100%; font: 600 16px/1 "Inter", sans-serif; letter-spacing: -.04em; color: #ffffe6; white-space: nowrap; }
+.el-logo::before { content: ""; width: 18px; height: 18px; margin-right: 8px; border-radius: 50%; border: 2px solid #e4fe7b; background: radial-gradient(circle at 38% 38%, #e4fe7b 0 38%, transparent 40%); flex: none; }
+.el-logo.big { font-size: clamp(36px, 6.2vw, 92px); letter-spacing: -.06em; color: #e4fe7b; }
+
+/* Counters: plain number in place of Framer's JS number-flow. */
+.el-num { font: 600 clamp(48px, 5vw, 72px)/1 "Inter", sans-serif; letter-spacing: -.05em; color: #ffffe6; }
+
+/* FAQ accordion without Framer: closed items hide their answer; site.js swaps open/closed. */
+[data-framer-name="Close"] [data-framer-name="Answer Wrapper"] { display: none !important; }
+[data-framer-name="Open"], [data-framer-name="Close"] { cursor: pointer; }
+.el-logo.big::before { display: none; }
+
+/* Visible marker for copy the owner still has to supply ([[OWNER: ...]] in content). */
+mark.owner { background: transparent; color: inherit; outline: 1.5px dashed #c9a400; outline-offset: 2px; border-radius: 4px; font: 600 .8em "Red Hat Mono", ui-monospace, monospace; padding: 0 4px; letter-spacing: 0; text-transform: none; }
+mark.owner::before { content: "OWNER: "; color: #c9a400; }
+
+/* Template floating chat button: its icon needs Framer JS, so it showed as an empty black square. */
+.framer-ky3nrx-container { display: none !important; }
