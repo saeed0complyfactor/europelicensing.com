@@ -43,3 +43,22 @@ mark.owner::before { content: "OWNER: "; color: #c9a400; }
 .person p { flex: none; margin-bottom: 12px; }
 .person .photo { border: 0; background: var(--ink); color: var(--lime); display: grid; place-items: center; font-weight: 600; font-size: 28px; letter-spacing: .02em; }
 @media (min-width: 901px) { #team .cards { grid-template-columns: repeat(2, 1fr); } }
+
+/* Cookie banner and "Cookie choices" button (build.py consent(), shown by analytics.js). Lives here because the home
+   page loads owner.css but not styles.css, so tokens carry fallbacks. Accept and Decline share one style on purpose:
+   GDPR consent needs them equally prominent. */
+.el-consent { position: fixed; z-index: 100; left: 16px; right: 16px; bottom: 16px; max-width: 580px; margin: 0 auto;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; padding: 16px 18px; border-radius: var(--r-md, 13px);
+  background: var(--ink, #0a0a0a); color: var(--cream, #ffffe6); border: 1px solid rgba(255,255,230,.2);
+  box-shadow: 0 20px 40px -16px rgba(0,0,0,.55); font: 500 14px/1.45 var(--sans, "Inter", system-ui, sans-serif); letter-spacing: -.01em; }
+.el-consent p { margin: 0; flex: 1 1 260px; color: var(--muted-dark, rgba(255,255,230,.66)); }
+.el-consent a { color: var(--lime, #e4fe7b); }
+.el-consent-actions { display: flex; gap: 10px; flex: 1 1 200px; }
+.el-consent .btn { flex: 1 1 0; justify-content: center; display: inline-flex; align-items: center; padding: 10px 16px; border: 0; border-radius: 999px;
+  background: var(--lime, #e4fe7b); color: var(--ink, #0a0a0a); font: 600 15px/1.2 var(--sans, "Inter", system-ui, sans-serif); cursor: pointer; }
+.el-consent .btn::after { content: none; }
+.el-cookie-open { position: relative; z-index: 11; /* above the template's fixed bottom blur (z-index 10) */ display: block; width: 100%; margin: 0; padding: 14px 24px 22px; border: 0; background: var(--ink, #0a0a0a);
+  color: var(--muted-dark, rgba(255,255,230,.66)); font: 500 14px/1.4 var(--sans, "Inter", system-ui, sans-serif); text-decoration: underline; cursor: pointer; }
+.el-cookie-open:hover { color: var(--lime, #e4fe7b); }
+.el-consent .btn:focus-visible, .el-cookie-open:focus-visible { outline: 2px solid var(--cream, #ffffe6); outline-offset: 2px; }
+.el-consent[hidden], .el-cookie-open[hidden] { display: none; }

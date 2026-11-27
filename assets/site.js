@@ -73,5 +73,9 @@ document.addEventListener('click', (e) => {
 // Contact form: FormSubmit sends the visitor back to /contact/#sent after a successful submission.
 (() => {
   const note = location.hash === '#sent' && document.querySelector('.form-sent');
-  if (note) { note.hidden = false; note.scrollIntoView({ block: 'center' }); }
+  if (!note) return;
+  note.hidden = false;
+  note.scrollIntoView({ block: 'center' });
+  window.gtag?.('event', 'generate_lead', { form: 'contact' });  // gtag exists only after consent (analytics.js runs first)
+  history.replaceState(null, '', location.pathname + location.search);  // a reload must not count the lead twice
 })();
